@@ -30,7 +30,7 @@ from components import (
     render_takeaway,
 )
 from icons import ICONS
-from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION
+from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION, AWARD, AWARD_BADGE
 import theme
 theme = importlib.reload(theme)
 from theme import AQI_PALETTE, COLORS, get_aqi_category_color, get_priority_tier
@@ -161,6 +161,19 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.markdown(
+    f'<div style="background: linear-gradient(135deg, rgba(203, 213, 225, 0.12), rgba(148, 163, 184, 0.22)); '
+    f'border: 1px solid rgba(203, 213, 225, 0.45); border-radius: 8px; padding: 7px 12px; margin-bottom: 10px; '
+    f'display: flex; align-items: center; gap: 9px; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">'
+    f'  <div style="font-size: 1.15rem; line-height: 1;">🥈</div>'
+    f'  <div>'
+    f'    <div style="font-size: 0.74rem; font-weight: 800; color: #FFFFFF; letter-spacing: 0.02em;">2nd Place Winner</div>'
+    f'    <div style="font-size: 0.65rem; color: #94A3B8; font-weight: 600;">{EVENT_NAME}</div>'
+    f'  </div>'
+    f'</div>',
+    unsafe_allow_html=True,
+)
+
 st.sidebar.caption("BMC / MPCB Environmental Command Console")
 
 NAV_SECTIONS = [
@@ -254,7 +267,7 @@ st.sidebar.markdown(
 )
 
 with st.sidebar.expander(f"{ICONS['info']} About CityPulse", expanded=False):
-    st.markdown(f"**Built for {EVENT_NAME}**  \nby **{TEAM_MEMBERS}**")
+    st.markdown(f"🏆 **Award:** {AWARD} at **{EVENT_NAME}**  \n **Built by:** **{TEAM_MEMBERS}**")
     st.caption(
         "CityPulse: Mumbai is an air quality prioritisation and decision-support prototype "
         "for municipal environmental planning and inspection triage (BMC / MPCB role). "

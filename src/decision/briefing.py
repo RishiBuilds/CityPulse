@@ -12,7 +12,7 @@ from typing import Optional
 import pandas as pd
 import streamlit as st
 
-from config import DATA_ATTRIBUTION, TEAM_MEMBERS
+from config import DATA_ATTRIBUTION, TEAM_MEMBERS, EVENT_NAME, AWARD
 from theme import get_aqi_category_color
 
 def generate_briefing_html(
@@ -280,7 +280,7 @@ def generate_briefing_html(
             <strong>Disclaimer:</strong> This briefing is a decision-support tool for municipal environmental planning. 
             It is NOT an official statutory warning system. Physical inspection and verification are required before 
             enforcement actions. All forecasts include uncertainty and should be interpreted with caution.<br>
-            <strong>Built by:</strong> {TEAM_MEMBERS} for HackAMatch 1.0<br>
+            <strong>Built by:</strong> {TEAM_MEMBERS} · 🥈 {AWARD} ({EVENT_NAME})<br>
             <strong>License:</strong> MIT License | Open-source project available for public benefit
         </p>
     </div>

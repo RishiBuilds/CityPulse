@@ -17,7 +17,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 import config
-from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION, DISCLAIMER_TEXT, get_secret
+from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION, DISCLAIMER_TEXT, get_secret, AWARD
 import charts
 import components
 import theme
@@ -76,6 +76,7 @@ class TestDeploymentSmoke(unittest.TestCase):
     def test_04_attribution_and_branding_integrity(self):
         """Verify mandatory hackathon attribution strings."""
         self.assertEqual(EVENT_NAME, "HackAMatch 1.0")
+        self.assertIn("2nd Place", AWARD)
         self.assertIn("Ratnesh", TEAM_MEMBERS)
         self.assertIn("Rishi", TEAM_MEMBERS)
         self.assertIn("Shreya", TEAM_MEMBERS)

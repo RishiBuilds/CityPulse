@@ -1,6 +1,6 @@
 # CityPulse: Mumbai — Feature Inventory
 
-**Complete list of decision-support features built for HackAMatch 1.0**
+**Complete list of decision-support features built for HackAMatch 1.0 (🥈 2nd Place Winner)**
 
 ---
 
@@ -356,5 +356,5 @@
 
 ---
 
-**Last Updated:** October 23, 2026
-**Build Version:** Hackathon Submission v1.0
+**Last Updated:** October 27, 2026
+**Build Version:** HackAMatch 1.0 — 🥈 2nd Place Winner Edition

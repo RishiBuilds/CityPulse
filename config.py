@@ -7,6 +7,8 @@ import os
 from typing import Optional
 
 EVENT_NAME = "HackAMatch 1.0"
+AWARD = "🥈 2nd Place Winner"
+AWARD_BADGE = "🥈 2nd Place Winner — HackAMatch 1.0"
 TEAM_MEMBERS = "Ratnesh, Rishi & Shreya"
 APP_NAME = "CityPulse: Mumbai"
 APP_TAGLINE = "Air Quality Prioritisation & Decision Support"

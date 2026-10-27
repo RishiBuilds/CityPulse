@@ -295,6 +295,13 @@ def inject_custom_css():
             border-color: rgba(16, 185, 129, 0.4);
             color: #34D399;
         }}
+        .cp-pill-award {{
+            background: linear-gradient(135deg, rgba(203, 213, 225, 0.18) 0%, rgba(148, 163, 184, 0.28) 100%);
+            border-color: rgba(203, 213, 225, 0.55);
+            color: #F8FAFC;
+            font-weight: 700;
+            box-shadow: 0 0 12px rgba(203, 213, 225, 0.22);
+        }}
 
         /* KPI Cards */
         .cp-kpi-card {{

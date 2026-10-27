@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <img alt="Award" src="https://img.shields.io/badge/HackAMatch%201.0-🥈%202nd%20Place%20Winner-silver?style=flat&logoColor=white">
   <img alt="Status" src="https://img.shields.io/badge/status-prototype-orange">
   <img alt="Python" src="https://img.shields.io/badge/python-3.10%2B-blue">
   <img alt="Streamlit" src="https://img.shields.io/badge/app-Streamlit-ff4b4b">
@@ -24,6 +25,9 @@ CityPulse ranks Mumbai Metropolitan Region monitoring zones by inspection priori
 
 > [!NOTE]
 > **Status: prototype.** CityPulse supports municipal planning and prioritisation. It is not an official warning system and does not replace statutory monitoring by the CPCB or MPCB.
+
+> [!TIP]
+> 🥈 **2nd Place Winner at HackAMatch 1.0!** CityPulse was awarded 2nd place for its end-to-end municipal decision-support architecture, explainable multi-factor AQI triage, and transparent empirical validation on official CPCB & weather telemetry.
 
 ---
 
@@ -360,6 +364,7 @@ citypulse/
 ---
 
 <p align="center">
-  Built by <b>Ratnesh</b>, <b>Rishi</b> and <b>Shreya</b> for HackAMatch 1.0<br>
+  🥈 <b>2nd Place Winner — HackAMatch 1.0</b><br>
+  Built by <b>Ratnesh</b>, <b>Rishi</b> and <b>Shreya</b><br>
   Released under the <a href="LICENSE">MIT License</a>
 </p>

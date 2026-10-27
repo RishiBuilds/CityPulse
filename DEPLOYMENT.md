@@ -3,7 +3,7 @@
 > **Live Demo URL:** [https://citypulse-mumbai.streamlit.app](https://citypulse-mumbai.streamlit.app)  
 > **Fallback Mirror (Hugging Face Spaces):** `https://huggingface.co/spaces/<your-username>/citypulse-mumbai`  
 > **Repository:** [https://github.com/RishiBuilds/CityPulse](https://github.com/RishiBuilds/CityPulse)  
-> **Built for:** HackAMatch 1.0 by Ratnesh, Rishi & Shreya  
+> **Built for:** HackAMatch 1.0 (🥈 2nd Place Winner) by Ratnesh, Rishi & Shreya  
 
 ---
 
@@ -47,7 +47,7 @@ All items below have been executed, tested, and confirmed in the repository:
    - Optional keys are resolved via `config.get_secret(key, default)` which queries `st.secrets` with fallback to `os.environ`.
    - Missing keys degrade gracefully; the app never crashes or raises unhandled exceptions.
 5. **Branding & Disclaimer Integrity:**
-   - Persistent banner (`Prototype - not an official warning system`), HackAMatch 1.0 team attribution (`Built for HackAMatch 1.0 by Ratnesh, Rishi & Shreya`), and open data attributions (`CPCB / Open-Meteo / OpenStreetMap contributors`) remain permanently rendered across all views.
+   - Persistent banner (`Prototype - not an official warning system`), HackAMatch 1.0 2nd place team attribution (`🥈 2nd Place Winner at HackAMatch 1.0 · Built by Ratnesh, Rishi & Shreya`), and open data attributions (`CPCB / Open-Meteo / OpenStreetMap contributors`) remain permanently rendered across all views.
 6. **Automated Smoke Tests:**
    - Run with `python -m unittest tests/test_deployment_smoke.py`. All 6 smoke tests and 11 pipeline tests pass cleanly (`Ran 17 tests in 0.963s: OK`).
 
@@ -185,4 +185,4 @@ Alternatively, in the Streamlit Cloud dashboard:
 
 ---
 
-*CityPulse: Mumbai • Decision-Support Prototype • HackAMatch 1.0*
+*CityPulse: Mumbai • Decision-Support Prototype • HackAMatch 1.0 (🥈 2nd Place Winner)*

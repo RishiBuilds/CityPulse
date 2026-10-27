@@ -1,6 +1,24 @@
 # UI/UX & Data-Visualization Changelog — CityPulse: Mumbai
 
-Release: v2.1 (Design System & Presentation-Layer Redesign)  
+Release: v2.2 (🥈 HackAMatch 1.0 — 2nd Place Winner Edition)  
+Focus: Celebrating 2nd Place recognition at HackAMatch 1.0, updating project attribution, badges, and municipal decision-support artifacts.
+
+---
+
+## 🏆 HackAMatch 1.0 — 2nd Place Winner Milestone (October 2026)
+- **Competition Result:** Awarded **🥈 2nd Place** at **HackAMatch 1.0** for excellence in urban data engineering, air quality forecasting, and municipal decision support.
+- **Key Judge Accolades:**
+  - Robust evaluation framework benchmarking ML forecasts vs. domain baselines (persistence).
+  - Practical decision triage translating continuous AQI predictions into inspection routing and resource budgets.
+  - Transparent data disclosures and clear demarcation of engineering thresholds vs. statutory standards.
+- **Branding & Presentation Enhancements:**
+  - Added official HackAMatch 2nd Place winner badge and pill styling (`.cp-pill-award`) across the web app.
+  - Updated executive command header, persistent credit footer, and sidebar navigation console with award accolades.
+  - Integrated award attribution into the municipal briefing PDF/HTML export and repository documentation.
+
+---
+
+## Release: v2.1 (Design System & Presentation-Layer Redesign)  
 Focus: Modernizing the decision-support dashboard for municipal inspectors (BMC / MPCB role) into a polished, executive-ready interface.
 
 ---

@@ -8,7 +8,7 @@ import pandas as pd
 import streamlit as st
 from theme import COLORS, AQI_PALETTE, get_aqi_category_color, get_priority_tier
 from icons import ICONS
-from config import EVENT_NAME, TEAM_MEMBERS, DISCLAIMER_TEXT
+from config import EVENT_NAME, TEAM_MEMBERS, DISCLAIMER_TEXT, AWARD, AWARD_BADGE
 
 def render_compact_banner():
     """Renders a concise, professional regulatory disclaimer banner."""
@@ -41,6 +41,7 @@ def render_header(station_name: str, date_str: str, total_stations: int = 37):
         f'    </div>'
         f'  </div>'
         f'  <div class="cp-cmd-badges">'
+        f'    <span class="cp-pill cp-pill-award">🥈 2nd Place · {EVENT_NAME}</span>'
         f'    <span class="cp-pill cp-pill-amber">Historical Demo · Decision Replay</span>'
         f'    <span class="cp-pill cp-pill-teal">Focus: {station}</span>'
         f'    <span class="cp-pill">As of {date}</span>'
@@ -325,7 +326,7 @@ def render_footer():
     """Renders the persistent HackAMatch credit & data provenance footer."""
     footer_html = (
         f'<div class="cp-footer">'
-        f'  <div class="cp-footer-primary">Built for <strong>{EVENT_NAME}</strong> by <strong>{TEAM_MEMBERS}</strong></div>'
+        f'  <div class="cp-footer-primary">🥈 <strong>2nd Place Winner</strong> at <strong>{EVENT_NAME}</strong> · Built by <strong>{TEAM_MEMBERS}</strong></div>'
         f'  <div class="cp-footer-secondary">{DISCLAIMER_TEXT}</div>'
         f'</div>'
     )
