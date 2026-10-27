@@ -12,7 +12,18 @@ from typing import Optional
 import pandas as pd
 import streamlit as st
 
-from config import DATA_ATTRIBUTION, TEAM_MEMBERS, EVENT_NAME, AWARD
+import importlib
+import config
+try:
+    config = importlib.reload(config)
+except Exception:
+    pass
+
+try:
+    from config import DATA_ATTRIBUTION, TEAM_MEMBERS, EVENT_NAME, AWARD
+except ImportError:
+    from config import DATA_ATTRIBUTION, TEAM_MEMBERS, EVENT_NAME
+    AWARD = getattr(config, "AWARD", "🥈 2nd Place Winner")
 from theme import get_aqi_category_color
 
 def generate_briefing_html(

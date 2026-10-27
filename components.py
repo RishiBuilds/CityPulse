@@ -7,8 +7,19 @@ from html import escape
 import pandas as pd
 import streamlit as st
 from theme import COLORS, AQI_PALETTE, get_aqi_category_color, get_priority_tier
-from icons import ICONS
-from config import EVENT_NAME, TEAM_MEMBERS, DISCLAIMER_TEXT, AWARD, AWARD_BADGE
+import importlib
+import config
+try:
+    config = importlib.reload(config)
+except Exception:
+    pass
+
+try:
+    from config import EVENT_NAME, TEAM_MEMBERS, DISCLAIMER_TEXT, AWARD, AWARD_BADGE
+except ImportError:
+    from config import EVENT_NAME, TEAM_MEMBERS, DISCLAIMER_TEXT
+    AWARD = getattr(config, "AWARD", "🥈 2nd Place Winner")
+    AWARD_BADGE = getattr(config, "AWARD_BADGE", "🥈 2nd Place Winner — HackAMatch 1.0")
 
 def render_compact_banner():
     """Renders a concise, professional regulatory disclaimer banner."""

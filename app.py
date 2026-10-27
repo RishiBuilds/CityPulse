@@ -15,6 +15,12 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+import config
+try:
+    config = importlib.reload(config)
+except Exception:
+    pass
+
 import components as ui_components
 ui_components = importlib.reload(ui_components)
 from components import (
@@ -30,7 +36,12 @@ from components import (
     render_takeaway,
 )
 from icons import ICONS
-from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION, AWARD, AWARD_BADGE
+try:
+    from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION, AWARD, AWARD_BADGE
+except ImportError:
+    from config import EVENT_NAME, TEAM_MEMBERS, DATA_ATTRIBUTION
+    AWARD = getattr(config, "AWARD", "🥈 2nd Place Winner")
+    AWARD_BADGE = getattr(config, "AWARD_BADGE", "🥈 2nd Place Winner — HackAMatch 1.0")
 import theme
 theme = importlib.reload(theme)
 from theme import AQI_PALETTE, COLORS, get_aqi_category_color, get_priority_tier
