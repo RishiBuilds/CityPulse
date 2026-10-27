@@ -818,7 +818,6 @@ elif "Air Quality Insights" in selected_nav_label:
                 """
             )
 
-    # 3. DIWALI CASE STUDY
     with ins_tab3:
         st.markdown("### :material/menu_book: Episode Case Study: Diwali 2023 Air Quality Surge")
         st.caption("Data period: 01 Nov – 20 Nov 2023 | Source: CPCB CAAQMS via cleaned pipeline")
